@@ -14,7 +14,6 @@ const Favourite = () => {
 
   const newArray = trendingCards.filter((item) => item.favourite === true);
 
-
   return (
     <div className="flex flex-row p-12 gap-[20px] overflow-hidden sm:overflow-scroll">
       {newArray.map((item) => {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const MenuItems = () => {
   return (
@@ -9,7 +9,7 @@ const MenuItems = () => {
         <li>Documentaries</li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
 export default MenuItems;

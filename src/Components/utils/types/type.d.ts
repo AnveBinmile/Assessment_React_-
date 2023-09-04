@@ -25,3 +25,9 @@ export interface TrendingCardProps {
 export interface NavItemPropsArray {
   menuItems: Array<NavItemProps>;
 }
+
+export interface appContextType {
+  favArray: TrendingCard[];
+  showSideNav: boolean;
+  setShowSideNav: React.Dispatch<React.SetStateAction<boolean>>;
+}

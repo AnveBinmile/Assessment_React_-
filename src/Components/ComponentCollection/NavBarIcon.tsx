@@ -4,18 +4,11 @@ import AppContext from "../Context/AppContext";
 const NavBarIcon = () => {
   const { showSideNav, setShowSideNav } = useContext(AppContext);
 
-  console.log("Before setting ", showSideNav);
-
   const resetShowNavBar: MouseEventHandler<HTMLDivElement> = () => {
-    console.log("resetShowNavBar");
     setShowSideNav((showSideNav) => !showSideNav);
   };
 
-  console.log("After setting ", showSideNav);
-
-  useEffect(() => {
-    console.log("After setting", showSideNav);
-  }, [showSideNav]);
+  useEffect(() => {}, [showSideNav]);
 
   return (
     <div
