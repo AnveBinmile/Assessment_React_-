@@ -1,16 +1,16 @@
-import React, { MouseEventHandler, useState } from "react";
-import { TrendingCard } from "../utils/types/type";
-import { FavSelect, FavUnselect } from "../ComponentImages";
-import { useContext } from "react";
-import AppContext from "../Context/AppContext";
-import { trendingCards } from "../utils/constants/DummyData";
-import { TrendingCardProps } from "../utils/types/type";
+import React, { MouseEventHandler, useState,useContext } from "react";
+import { TrendingCard,TrendingCardProps } from "./utils/types/type";
+import { FavSelect,FavUnselect } from "../../assets";
+import AppContext from "../../common/Context/AppContext";
+import { trendingCards } from "./utils/constants/DummyData";
+import "./ComponentCardStyle.css";
 
 type CardProps = TrendingCardProps & TrendingCard;
 
 const ComponentCard: React.FC<CardProps> = ({
-  setlength,
-  topic,
+  isBig,
+  setlength = () => {},
+  topic="",
   id,
   description,
   img,
@@ -18,13 +18,16 @@ const ComponentCard: React.FC<CardProps> = ({
   year,
   type,
   favourite,
-  setTopic,
+  setTopic=()=>{},
 }) => {
   const data = useContext(AppContext);
 
   const [fav, setfav] = useState(favourite);
 
+  console.log(topic);
+
   let favIcon = fav ? FavSelect : FavUnselect;
+
 
   const handleFav = () => {
     setfav(!fav);
@@ -43,7 +46,6 @@ const ComponentCard: React.FC<CardProps> = ({
       favArray.push(obj);
       if (setlength) setlength(favArray.length);
       const index = trendingCards.findIndex((item) => item.id === obj.id);
-
       trendingCards[index].favourite = true;
     } else {
       favArray.splice(favArray.indexOf(obj), 1);
@@ -64,13 +66,17 @@ const ComponentCard: React.FC<CardProps> = ({
       description: description,
     };
 
+    console.log('CARD  isBig',isBig);
+
     setTopic?.(newObj);
   };
 
   return (
     <div
       onClick={handleClick}
-      className="w-[255px] relative cursor-pointer min-w-[300px] flex flex-col justify-start h-[470px] overflow-hidden"
+      className={` ${
+        isBig ? "bigCard" : "smallCard"
+      } relative cursor-pointer flex flex-col justify-start h-[470px] overflow-hidden`}
     >
       <div className="img relative w-[100%]">
         <img
@@ -85,7 +91,7 @@ const ComponentCard: React.FC<CardProps> = ({
           alt=""
         />
       </div>
-      <div className="rounded-b-[30px] bottom-[100px] relative pl-[20px] gap-[5px] text-black flex bg-gray-400 flex-col justify-center h-[100px] border items-start opacity-70">
+      <div className={`rounded-b-[30px] ${isBig?"cardInfoLg":"cardInfoSm"} relative pl-[20px] gap-[5px] text-black flex bg-gray-400 flex-col justify-center h-[100px] border items-start opacity-70`}>
         <h3>{title}</h3>
 
         <h4>

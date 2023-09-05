@@ -1,9 +1,9 @@
 import "./App.css";
-import Content from "./Components/Content/Content";
+import Content from "./Components/ComponentContent/ComponentContent";
 import ComponentNavbar from "./Components/ComponentNavbar/ComponentNavbar";
 import { useState } from "react";
 
-import AppContext from "./Components/Context/AppContext";
+import AppContext from "./common/Context/AppContext";
 
 function App() {
   const [showSideNav, setShowSideNav] = useState(false);

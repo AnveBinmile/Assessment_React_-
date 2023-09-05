@@ -1,6 +1,4 @@
-// export const menuItems = ['Home','Favourite','Trending','Coming Soon']
-
-import { NavItemProps } from "../types/type";
+import { NavItemProps } from "../../ComponentNavbar/utils/types/type";
 import {
   heart,
   trendingUp,
@@ -10,9 +8,9 @@ import {
   messageCircle,
   sliders,
   logOut,
-} from "../../ComponentImages";
-import { card1, card2, card3, card4 } from "../../ComponentImages";
-import { Bcard1, Bcard2, Bcard3 } from "../../ComponentImages";
+} from "../../../assets";
+import { Bcard1, Bcard2, Bcard3 } from "../../../assets";
+import { card1, card2, card3, card4 } from "../../../assets";
 
 export const menuItems_1: NavItemProps[] = [
   {
@@ -152,52 +150,6 @@ export const trendingCards = [
     time: "2h 38m",
     favourite: false,
   },
-  // {
-  //   key: 9,
-  //   title: "Tokyo Train",
-  //   year: "2022",
-  //   type: "Action Comedy",
-  //   img: card1,
-  //   description:
-  //     "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
-  //   time: "2h 38m",
-  //   favourite: false,
-  // },
-  // {
-  //   key: 10,
-  //   title: "Moonfall",
-  //   year: "2022",
-  //   type: "Sci-fi",
-  //   img: card2,
-  //   description:
-  //     "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
-  //   time: "2h 38m",
-  //   favourite: false,
-  // },
-  // {
-  //   key: 11,
-  //   title: "Star Wars",
-  //   year: "2023",
-  //   type: "Documentry",
-  //   img: card3,
-  //   description:
-  //     "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
-  //   time: "2h 38m",
-
-  //   favourite: false,
-  // },
-  // {
-  //   key: 12,
-  //   title: "House of Gucci",
-  //   year: "2021",
-  //   type: "Drama",
-  //   img: card4,
-  //   description:
-  //     "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
-  //   time: "2h 38m",
-
-  //   favourite: false,
-  // },
 ];
 
 export const comingSoonCards = [

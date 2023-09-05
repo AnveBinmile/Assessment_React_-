@@ -1,6 +1,6 @@
 export interface TrendingCard {
   setlength?: React.Dispatch<React.SetStateAction<number>>;
-  id:number;
+  id: number;
   title: string;
   year: string;
   type: string;
@@ -12,14 +12,7 @@ export interface TrendingCard {
 }
 
 export interface TrendingCardProps {
-  isBig:boolean;
+  isBig: boolean;
   topic?: TrendingCard;
   setTopic?: React.Dispatch<React.SetStateAction<TrendingCard>>;
 }
-
-export interface appContextType {
-  favArray: TrendingCard[];
-  showSideNav: boolean;
-  setShowSideNav: React.Dispatch<React.SetStateAction<boolean>>;
-}
-

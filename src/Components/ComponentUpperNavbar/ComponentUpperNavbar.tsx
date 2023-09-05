@@ -1,5 +1,4 @@
-import Profile from "./components/Profile";
-import Menu from "./components/Menu";
+import { Profile, Menu } from "./components";
 
 const UpperNavbar = () => {
   return (

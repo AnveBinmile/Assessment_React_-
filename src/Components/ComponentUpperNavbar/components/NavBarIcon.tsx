@@ -1,24 +1,13 @@
-import React, { useContext, MouseEventHandler, useEffect } from "react";
-import AppContext from "../Context/AppContext";
+import { useContext, MouseEventHandler } from "react";
+import AppContext from "../../../common/Context/AppContext";
 
 const NavBarIcon = () => {
-  // const { showSideNav, setShowSideNav } = useContext(AppContext);
-
-  // console.log('=>>',showSideNav,setShowSideNav);
-
   const data = useContext(AppContext);
   const { showSideNav, setShowSideNav }  = data;
 
-
   const resetShowNavBar: MouseEventHandler<HTMLDivElement> = () => {
-    console.log(showSideNav, 'CLICKED');
     setShowSideNav((showSideNav) => !showSideNav);
-    // setShowSideNav(true)
   };
-
-  console.log(showSideNav, 'CLICKED');
-
-  // useEffect(() => {}, [showSideNav]);
 
   return (
     <div

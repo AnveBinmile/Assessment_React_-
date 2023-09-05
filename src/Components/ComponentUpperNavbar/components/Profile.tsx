@@ -1,4 +1,4 @@
-import { Bell, Search, ProfilePicture } from "../../ComponentImages";
+import { Bell, Search, ProfilePicture } from "../../../assets";
 
 const Profile = () => {
   return (

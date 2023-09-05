@@ -1,7 +1,7 @@
 import React from "react";
 import { TrendingCard } from "../../../Components/utils/types/type";
 import ComponentButton from "../../../Components/ComponentButton/ComponentButton";
-import { FavUnselect } from "../../../Components/ComponentImages";
+import { FavUnselect } from "../../../assets";
 
 interface TrendingCardProps {
   topic: TrendingCard;

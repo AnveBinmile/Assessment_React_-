@@ -1,7 +1,8 @@
-import  {  useContext, useState } from "react";
-import AppContext from "../../Components/Context/AppContext";
-import ComponentCard from "../../Components/ComponentCard/ComponentCard";
+import { useContext, useState } from "react";
+import AppContext from "../../common/Context/AppContext";
 import { trendingCards } from "../../Components/utils/constants/DummyData";
+import ComponentCard from "../../Components/ComponentCard/ComponentCard";
+
 
 const Favourite = () => {
   const data = useContext(AppContext);
@@ -12,6 +13,7 @@ const Favourite = () => {
 
   const [length, setlength] = useState(favArray.length);
 
+  console.log(length);
 
   const newArray = trendingCards.filter((item) => item.favourite === true);
 
@@ -20,6 +22,7 @@ const Favourite = () => {
       {newArray.map((item) => {
         return (
           <ComponentCard
+            isBig={false}
             setlength={setlength}
             id={item.id}
             title={item.title}
@@ -28,7 +31,7 @@ const Favourite = () => {
             img={item.img}
             description={item.description}
             favourite={item.favourite}
-            width={255}                                                                                                                                                                                                                            
+            width={255}
           />
         );
       })}

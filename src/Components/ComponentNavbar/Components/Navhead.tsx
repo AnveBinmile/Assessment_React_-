@@ -1,4 +1,4 @@
-import { coffee } from "../../ComponentImages";
+import { coffee } from "../../../assets";
 
 const Navhead = () => {
   return (
