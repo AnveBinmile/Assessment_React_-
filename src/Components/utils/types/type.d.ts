@@ -6,7 +6,8 @@ export interface NavItemProps {
 
 export interface TrendingCard {
   setlength?: React.Dispatch<React.SetStateAction<number>>;
-  key: number;
+  // key: number;
+  id:number;
   title: string;
   year: string;
   type: string;

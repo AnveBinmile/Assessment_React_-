@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, useEffect, useState } from "react";
+import React, { MouseEventHandler, useState } from "react";
 import { TrendingCard } from "../utils/types/type";
 import { FavSelect, FavUnselect } from "../ComponentImages";
 import { useContext } from "react";
@@ -11,7 +11,7 @@ type CardProps = TrendingCardProps & TrendingCard;
 const ComponentCard: React.FC<CardProps> = ({
   setlength,
   topic,
-  key,
+  id,
   description,
   img,
   title,
@@ -30,7 +30,7 @@ const ComponentCard: React.FC<CardProps> = ({
     setfav(!fav);
     const { favArray } = data;
     const obj = {
-      key: key,
+      id: id,
       title: title,
       description: description,
       img: img,
@@ -42,12 +42,12 @@ const ComponentCard: React.FC<CardProps> = ({
     if (fav === false) {
       favArray.push(obj);
       if (setlength) setlength(favArray.length);
+      const index = trendingCards.findIndex((item) => item.id === obj.id);
 
-      const index = trendingCards.findIndex((item) => item.title === obj.title);
       trendingCards[index].favourite = true;
     } else {
       favArray.splice(favArray.indexOf(obj), 1);
-      const index = trendingCards.findIndex((item) => item.title === obj.title);
+      const index = trendingCards.findIndex((item) => item.id === obj.id);
       trendingCards[index].favourite = false;
       if (setlength) setlength(favArray.length);
     }
@@ -56,7 +56,7 @@ const ComponentCard: React.FC<CardProps> = ({
   const handleClick: MouseEventHandler<HTMLDivElement> = (e) => {
     const newObj: TrendingCard = {
       setlength: setlength,
-      key: key,
+      id: id,
       img: img,
       title: title,
       year: year,
@@ -69,7 +69,6 @@ const ComponentCard: React.FC<CardProps> = ({
 
   return (
     <div
-      key={key}
       onClick={handleClick}
       className="w-[255px] relative cursor-pointer min-w-[300px] flex flex-col justify-start h-[470px] overflow-hidden"
     >

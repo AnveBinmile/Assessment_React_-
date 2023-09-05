@@ -8,7 +8,7 @@ interface TrendingCardProps {
   setTopic?: React.Dispatch<React.SetStateAction<TrendingCard>>
 }
 
-const TrendingTopic:React.FC<TrendingCardProps> = ({topic,setTopic}) => {
+const TrendingTopic:React.FC<TrendingCardProps> = ({topic}) => {
   useEffect(()=>{
 
   },[])

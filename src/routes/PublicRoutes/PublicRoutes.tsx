@@ -1,4 +1,3 @@
-import React from 'react';
 import {Route, Routes} from 'react-router-dom'
 import HomeScreen from '../../pages/HomeScreen/HomeScreen';
 import Trending from '../../pages/Trending/Trending';

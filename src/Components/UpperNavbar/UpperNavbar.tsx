@@ -3,7 +3,7 @@ import Menu from "./components/Menu";
 
 const UpperNavbar = () => {
   return (
-    <div className="sm:h-[100px] h-[80px] w-[100%] items-center justify-between flex gap-[50px] sm:px-[50px]">
+    <div className="sm:h-[100px]  z-40 backdrop-blur-sm  fixed h-[80px] mx-auto w-[83%] items-center justify-between flex  sm:px-[50px]">
       <Menu />
       <Profile />
     </div>

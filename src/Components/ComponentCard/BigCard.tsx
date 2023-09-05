@@ -2,7 +2,7 @@ import React from "react";
 import { TrendingCard } from "../utils/types/type";
 
 const BigCard: React.FC<TrendingCard> = ({
-  key,
+  id,
   title,
   year,
   type,

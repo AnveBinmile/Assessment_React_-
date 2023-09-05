@@ -65,7 +65,7 @@ export const menuItems_3: NavItemProps[] = [
 
 export const trendingCards = [
   {
-    key: 1,
+    id: 1,
     title: "Tokyo Train",
     year: "2022",
     type: "Action Comedy",
@@ -76,7 +76,7 @@ export const trendingCards = [
     favourite: false,
   },
   {
-    key: 2,
+    id: 2,
     title: "Moonfall",
     year: "2022",
     type: "Sci-fi",
@@ -84,11 +84,10 @@ export const trendingCards = [
     description:
       "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
     time: "2h 38m",
-
     favourite: false,
   },
   {
-    key: 3,
+    id: 3,
     title: "Star Wars",
     year: "2023",
     type: "Documentry",
@@ -99,7 +98,7 @@ export const trendingCards = [
     favourite: false,
   },
   {
-    key: 4,
+    id: 4,
     title: "House of Gucci",
     year: "2021",
     type: "Drama",
@@ -110,7 +109,7 @@ export const trendingCards = [
     favourite: false,
   },
   {
-    key: 5,
+    id: 5,
     title: "Tokyo Train",
     year: "2022",
     type: "Action Comedy",
@@ -121,7 +120,7 @@ export const trendingCards = [
     favourite: false,
   },
   {
-    key: 6,
+    id: 6,
     title: "Moonfall",
     year: "2022",
     type: "Sci-fi",
@@ -132,7 +131,7 @@ export const trendingCards = [
     favourite: false,
   },
   {
-    key: 7,
+    id: 7,
     title: "Star Wars",
     year: "2023",
     type: "Documentry",
@@ -143,7 +142,7 @@ export const trendingCards = [
     favourite: false,
   },
   {
-    key: 8,
+    id: 8,
     title: "House of Gucci",
     year: "2021",
     type: "Drama",
@@ -153,57 +152,57 @@ export const trendingCards = [
     time: "2h 38m",
     favourite: false,
   },
-  {
-    key: 9,
-    title: "Tokyo Train",
-    year: "2022",
-    type: "Action Comedy",
-    img: card1,
-    description:
-      "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
-    time: "2h 38m",
-    favourite: false,
-  },
-  {
-    key: 10,
-    title: "Moonfall",
-    year: "2022",
-    type: "Sci-fi",
-    img: card2,
-    description:
-      "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
-    time: "2h 38m",
-    favourite: false,
-  },
-  {
-    key: 11,
-    title: "Star Wars",
-    year: "2023",
-    type: "Documentry",
-    img: card3,
-    description:
-      "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
-    time: "2h 38m",
+  // {
+  //   key: 9,
+  //   title: "Tokyo Train",
+  //   year: "2022",
+  //   type: "Action Comedy",
+  //   img: card1,
+  //   description:
+  //     "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
+  //   time: "2h 38m",
+  //   favourite: false,
+  // },
+  // {
+  //   key: 10,
+  //   title: "Moonfall",
+  //   year: "2022",
+  //   type: "Sci-fi",
+  //   img: card2,
+  //   description:
+  //     "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
+  //   time: "2h 38m",
+  //   favourite: false,
+  // },
+  // {
+  //   key: 11,
+  //   title: "Star Wars",
+  //   year: "2023",
+  //   type: "Documentry",
+  //   img: card3,
+  //   description:
+  //     "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
+  //   time: "2h 38m",
 
-    favourite: false,
-  },
-  {
-    key: 12,
-    title: "House of Gucci",
-    year: "2021",
-    type: "Drama",
-    img: card4,
-    description:
-      "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
-    time: "2h 38m",
+  //   favourite: false,
+  // },
+  // {
+  //   key: 12,
+  //   title: "House of Gucci",
+  //   year: "2021",
+  //   type: "Drama",
+  //   img: card4,
+  //   description:
+  //     "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
+  //   time: "2h 38m",
 
-    favourite: false,
-  },
+  //   favourite: false,
+  // },
 ];
 
 export const comingSoonCards = [
   {
-    key: 1,
+    id: 1,
     title: "Tokyo Train",
     year: "2022",
     type: "Action Comedy",
@@ -214,7 +213,7 @@ export const comingSoonCards = [
     favourite: false,
   },
   {
-    key: 2,
+    id: 2,
     title: "Moonfall",
     year: "2022",
     type: "Sci-fi",
@@ -225,7 +224,7 @@ export const comingSoonCards = [
     favourite: false,
   },
   {
-    key: 4,
+    id: 4,
     title: "Moonfall",
     year: "2022",
     type: "Sci-fi",

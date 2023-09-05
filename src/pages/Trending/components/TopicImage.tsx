@@ -12,4 +12,4 @@ const TopicImage:React.FC<TopicImageProps> = ({image}) => {
   )
 }
 
-export default TopicImage
+export default TopicImage 

@@ -1,27 +1,29 @@
 import "./App.css";
 import Content from "./Components/Content/Content";
 import ComponentNavbar from "./Components/ComponentNavbar/ComponentNavbar";
-import {useState } from "react";
+import { useState } from "react";
 
 import AppContext from "./Components/Context/AppContext";
 
 function App() {
-  const [showSideNav, setShowSideNav] = useState(true);
+  const [showSideNav, setShowSideNav] = useState(false);
+
+  console.log('App -> showsideNav',showSideNav);
+
   return (
     <AppContext.Provider
       value={{
         favArray: [],
-        showSideNav: true,
-        setShowSideNav: setShowSideNav,
+        showSideNav,
+        setShowSideNav
       }}
     >
       <div className="App bg-black flex justify-center sm:justify-start">
-        {showSideNav && <ComponentNavbar />}
+        <ComponentNavbar />
         <Content />
       </div>
     </AppContext.Provider>
   );
 }
-
 
 export default App;

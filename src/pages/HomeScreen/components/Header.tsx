@@ -3,7 +3,7 @@ import { FavUnselect } from "../../../Components/ComponentImages";
 
 const Header = () => {
   return (
-    <div className="header rounded-2xl bg-headerImg min-h-[400px] flex flex-col w-[100%] justify-end p-[10px] sm:p-[30px]">
+    <div className="header z-10 rounded-2xl bg-headerImg min-h-[450px] flex flex-col w-[100%] justify-end p-[10px] sm:p-[30px]">
       <div className="headerColumn w-[100%] px-[10px] p-[10px] sm:pb-[0] sm:w-[60%] ">
         <div className="content flex flex-col gap-[30px]">
           <h1 className="text-white font-poppins text-6xl sm:text-4xl font-semibold leading-tight">

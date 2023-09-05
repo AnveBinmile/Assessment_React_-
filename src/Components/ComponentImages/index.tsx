@@ -9,7 +9,7 @@ export {default as messageCircle} from '../../assets/NavIcons/messageCircle.jpg'
 export {default as coffee} from '../../assets/NavIcons/coffee.jpg';
 
 
-export {default as HeaderBck} from '../../assets/CardImages/Rectangle 201.png'
+// export {default as HeaderBck} from '../../assets/CardImages/Rectangle 201.png'
 
 
 export {default as card1} from '../../assets/CardImages/card1.png';

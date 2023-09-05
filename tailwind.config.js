@@ -8,7 +8,7 @@ export default {
         'greyBlack':'#21201E'
       },
       backgroundImage: {
-        'headerImg': "url('/home/anvesha/Documents/Anvesha/VscODE/React/ReactAndTailwind/AssessmentMovieApp/movieApp/src/assets/CardImages/Rectangle 201.png')"
+        'headerImg': "url('src/assets/CardImages/Rectangle.png')"
       }
     },
   },
