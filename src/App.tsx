@@ -5,24 +5,16 @@ import { useState } from "react";
 
 import AppContext from "./common/Context/AppContext";
 
+import AppProvider from "./common/Context/AppProvider";
+
 function App() {
-  const [showSideNav, setShowSideNav] = useState(false);
-
-  console.log('App -> showsideNav',showSideNav);
-
   return (
-    <AppContext.Provider
-      value={{
-        favArray: [],
-        showSideNav,
-        setShowSideNav
-      }}
-    >
+    <AppProvider>
       <div className="App bg-black flex justify-center sm:justify-start">
         <ComponentNavbar />
         <Content />
       </div>
-    </AppContext.Provider>
+    </AppProvider>
   );
 }
 
