@@ -1,4 +1,4 @@
-import NavBarIcon from "./NavBarIcon";
+import NavBarIcon from './NavBarIcon';
 
 const Menu = () => {
   return (

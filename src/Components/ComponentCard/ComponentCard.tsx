@@ -1,16 +1,16 @@
-import React, { MouseEventHandler, useState,useContext } from "react";
-import { TrendingCard,TrendingCardProps } from "./utils/types/type";
-import { FavSelect,FavUnselect } from "../../assets";
-import AppContext from "../../common/Context/AppContext";
-import { trendingCards } from "./utils/constants/DummyData";
-import "./ComponentCardStyle.css";
+import React, { MouseEventHandler, useState,useContext } from 'react';
+import { TrendingCard,TrendingCardProps } from './utils/types/type';
+import { FavSelect,FavUnselect } from '../../assets';
+import AppContext from '../../common/Context/AppContext';
+import { trendingCards } from '../utils/constants/DummyData';
+import './ComponentCardStyle.css';
 
 type CardProps = TrendingCardProps & TrendingCard;
 
 const ComponentCard: React.FC<CardProps> = ({
   isBig,
-  setlength = () => {},
-  topic="",
+  setlength = () =>{},
+  topic='',
   id,
   description,
   img,
@@ -26,7 +26,7 @@ const ComponentCard: React.FC<CardProps> = ({
 
   console.log(topic);
 
-  let favIcon = fav ? FavSelect : FavUnselect;
+  const favIcon = fav ? FavSelect : FavUnselect;
 
 
   const handleFav = () => {
@@ -66,8 +66,6 @@ const ComponentCard: React.FC<CardProps> = ({
       description: description,
     };
 
-    console.log('CARD  isBig',isBig);
-
     setTopic?.(newObj);
   };
 
@@ -75,7 +73,7 @@ const ComponentCard: React.FC<CardProps> = ({
     <div
       onClick={handleClick}
       className={` ${
-        isBig ? "bigCard" : "smallCard"
+        isBig ? 'bigCard' : 'smallCard'
       } relative cursor-pointer flex flex-col justify-start h-[470px] overflow-hidden`}
     >
       <div className="img relative w-[100%]">
@@ -91,7 +89,7 @@ const ComponentCard: React.FC<CardProps> = ({
           alt=""
         />
       </div>
-      <div className={`rounded-b-[30px] ${isBig?"cardInfoLg":"cardInfoSm"} relative pl-[20px] gap-[5px] text-black flex bg-gray-400 flex-col justify-center h-[100px] border items-start opacity-70`}>
+      <div className={`rounded-b-[30px] ${isBig?'cardInfoLg':'cardInfoSm'} relative pl-[20px] gap-[5px] text-black flex bg-gray-400 flex-col justify-center h-[100px] border items-start opacity-70`}>
         <h3>{title}</h3>
 
         <h4>

@@ -1,4 +1,4 @@
-import PublicRoute from "./PublicRoutes/PublicRoutes";
+import PublicRoute from './PublicRoutes/PublicRoutes';
 
 export function RouteManager() {
   return <PublicRoute />;

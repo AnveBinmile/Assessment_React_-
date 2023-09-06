@@ -1,6 +1,6 @@
-import { ReactNode, createContext, useState } from "react";
+import { ReactNode, createContext, useState } from 'react';
 
-import { appContextType } from "../../Components/utils/types/type";
+import { appContextType } from './utils/types/type';
 export const AppContext = createContext<appContextType>({
   favArray: [],
   showSideNav: false,

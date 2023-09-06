@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import { MenuItem } from './index';
-import { NavItemPropsArray,NavItemProps } from "../utils/types/type";
+import { NavItemPropsArray,NavItemProps } from '../utils/types/type';
 
 const Nav: React.FC<NavItemPropsArray> = ({ menuItems }) => {
   return (

@@ -1,7 +1,7 @@
-import { useContext, useState } from "react";
-import AppContext from "../../common/Context/AppContext";
-import { trendingCards } from "../../Components/utils/constants/DummyData";
-import ComponentCard from "../../Components/ComponentCard/ComponentCard";
+import { useContext, useState } from 'react';
+import AppContext from '../../common/Context/AppContext';
+import { trendingCards } from '../../Components/utils/constants/DummyData';
+import ComponentCard from '../../Components/ComponentCard/ComponentCard';
 
 
 const Favourite = () => {

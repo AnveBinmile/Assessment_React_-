@@ -1,5 +1,5 @@
-import { comingSoonCards } from "../../../Components/utils/constants/DummyData";
-import Card from "../../../Components/ComponentCard/ComponentCard";
+import { comingSoonCards } from '../../../Components/utils/constants/DummyData';
+import Card from '../../../Components/ComponentCard/ComponentCard';
 
 const ComingSoonScroll = () => {
   return (

@@ -1,9 +1,9 @@
-import Nav from "./Nav";
+import Nav from './Nav';
 import {
   menuItems_2,
   menuItems_1,
   menuItems_3,
-} from "../../utils/constants/DummyData";
+} from '../../utils/constants/DummyData';
 
 const NavMain = () => {
   return (

@@ -1,11 +1,7 @@
-import "./App.css";
-import Content from "./Components/ComponentContent/ComponentContent";
-import ComponentNavbar from "./Components/ComponentNavbar/ComponentNavbar";
-import { useState } from "react";
-
-import AppContext from "./common/Context/AppContext";
-
-import AppProvider from "./common/Context/AppProvider";
+import './App.css';
+import Content from './Components/ComponentContent/ComponentContent';
+import ComponentNavbar from './Components/ComponentNavbar/ComponentNavbar';
+import AppProvider from './common/Context/AppProvider';
 
 function App() {
   return (

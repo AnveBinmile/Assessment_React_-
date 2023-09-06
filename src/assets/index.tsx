@@ -1,32 +1,43 @@
-export {default as calender} from '../assets/images/NavImages/calendar (3).jpg';
-export {default as film} from '../assets/images/NavImages/film.jpg';
-export {default as heart} from '../assets/images/NavImages/heart.jpg';
-export {default as trendingUp} from '../assets/images/NavImages/trendingUp.jpg';
-export {default as sliders} from '../assets/images/NavImages/sliders.jpg';
-export {default as users} from '../assets/images/NavImages/users.jpg';
-export {default as logOut} from '../assets/images/NavImages/logOut.jpg';
-export {default as messageCircle} from '../assets/images/NavImages/messageCircle.jpg';
-export {default as coffee} from '../assets/images/NavImages/coffee.jpg';
-
-export {default as card1} from '../assets/images/CardImages/card1.png';
-export {default as card2} from '../assets/images/CardImages/card2.png';
-export {default as card3} from '../assets/images/CardImages/card3.png';
-export {default as card4} from '../assets/images/CardImages/card4.png';
-
-export {default as Cardheart} from '../assets/images/CardImages/heart.jpg';
-
-export {default as Bcard1} from '../assets/images/CardImages/Bcard1.png';
-export {default as Bcard2} from '../assets/images/CardImages/Bcard2.png';
-export {default as Bcard3} from '../assets/images/CardImages/Bcard3.png';
-
-export {default as FavSelect} from '../assets/images/CardImages/FavSelected.png';
-export {default as FavUnselect} from '../assets/images/CardImages/FavUnselected.jpg';
-
-export {default as Search} from '../assets/images/NavImages/search.png'
-export {default as Bell} from '../assets/images/NavImages/bell.png';
-export {default as ProfilePicture} from '../assets/images/NavImages/ProfilePic.jpg';
+export const card4 = require('./images/CardImages/card4.png') as string;
+export const card1 = require('./images/CardImages/card1.png') as string;
+export const card2 = require('./images/CardImages/card2.png') as string;
+export const card3 = require('./images/CardImages/card3.png') as string;
 
 
+export const calender =require('../assets/images/NavImages/calender.png') as string;
+export const film = require('../assets/images/NavImages/film.png') as string;
+export const trendingUp = require('../assets/images/NavImages/trendingUp.png') as string;
+export const sliders = require('../assets/images/NavImages/sliders') as string;
+export const users = require('../assets/images/NavImages/users') as string;
+export const logOut = require('../assets/images/NavImages/logOut') as string;
+export const messageCircle = require('../assets/images/NavImages/messageCircle') as string;
+export const coffee = require('../assets/images/NavImages/coffee') as string;
+
+
+export const ProfilePicture = require('../assets/images/NavImages/ProfilePic') as string;
+export const Cardheart =  require('../assets/images/CardImages/heart') as string;
+export const Bcard1 = require('../assets/images/CardImages/Bcard1.png') as string;
+export const Bcard2 = require('../assets/images/CardImages/Bcard2.png') as string;
+export const Bcard3 = require('../assets/images/CardImages/Bcard3.png') as string;
+
+export const FavSelect = require('../assets/images/CardImages/FavSelect.png') as string;
+export const FavUnselect = require('../assets/images/CardImages/FavUnselect.png') as string;
+
+
+export const Search = require('../assets/images/NavImages/search.png') as string;
+export const Bell = require('../assets/images/NavImages/bell.png') as string;
+
+
+
+
+
+// export {default as heart} from '../assets/images/NavImages/heart.jpg';
+// export {default as trendingUp} from '../assets/images/NavImages/trendingUp.jpg';
+// export {default as sliders} from '../assets/images/NavImages/sliders.jpg';
+// export {default as users} from '../assets/images/NavImages/users.jpg';
+// export {default as logOut} from '../assets/images/NavImages/logOut.jpg';
+// export {default as messageCircle} from '../assets/images/NavImages/messageCircle.jpg';
+// export {default as coffee} from '../assets/images/NavImages/coffee.jpg';
 
 
 

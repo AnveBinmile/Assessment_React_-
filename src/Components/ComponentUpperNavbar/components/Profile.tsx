@@ -1,4 +1,4 @@
-import { Bell, Search, ProfilePicture } from "../../../assets";
+import { Bell, Search, ProfilePicture } from '../../../assets';
 
 const Profile = () => {
   return (

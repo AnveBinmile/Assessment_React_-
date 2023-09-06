@@ -1,5 +1,5 @@
-import { useContext, MouseEventHandler } from "react";
-import AppContext from "../../../common/Context/AppContext";
+import { useContext, MouseEventHandler } from 'react';
+import AppContext from '../../../common/Context/AppContext';
 
 const NavBarIcon = () => {
   const data = useContext(AppContext);
@@ -14,7 +14,7 @@ const NavBarIcon = () => {
       onClick={resetShowNavBar}
       className="px-[5px] absolute z-70 sm:hidden"
     >
-      <i className="fa fa-bars" style={{ fontSize: "24px" }}></i>
+      <i className="fa fa-bars" style={{ fontSize: '24px' }}></i>
     </div>
   );
 };

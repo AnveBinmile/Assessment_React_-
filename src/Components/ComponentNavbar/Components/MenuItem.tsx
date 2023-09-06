@@ -1,6 +1,6 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import { NavItemProps } from "../utils/types/type";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { NavItemProps } from '../utils/types/type';
 
 const MenuItem: React.FC<NavItemProps> = ({ img, text, path }) => {
   return (
@@ -9,7 +9,7 @@ const MenuItem: React.FC<NavItemProps> = ({ img, text, path }) => {
       <NavLink to={path}>
         <p className="text-white font-poppins text-base font-normal leading-6">
           {text}
-        </p>{" "}
+        </p>{' '}
       </NavLink>
     </div>
   );

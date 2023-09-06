@@ -1,4 +1,4 @@
-import {Route, Routes} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom';
 import HomeScreen from '../../pages/HomeScreen/HomeScreen';
 import Trending from '../../pages/Trending/Trending';
 import Favourite from '../../pages/Favourite/Favourite';
@@ -15,7 +15,7 @@ const PublicRoutes = () => {
         <Route path="comingsoon" element={<ComingSoon/>}/>
 	</Routes>
     </div>
-  )
-}
+  );
+};
 
-export default PublicRoutes
+export default PublicRoutes;

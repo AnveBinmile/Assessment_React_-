@@ -1,4 +1,4 @@
-import { TrendingScroll,ComingSoonScroll,Header } from "./components"
+import { TrendingScroll,ComingSoonScroll,Header } from './components';
 
 const HomeScreen = () => {
   return (
@@ -7,7 +7,7 @@ const HomeScreen = () => {
         <TrendingScroll isBig={false}/>
         <ComingSoonScroll/>
     </div>
-  )
-}
+  );
+};
 
-export default HomeScreen
+export default HomeScreen;

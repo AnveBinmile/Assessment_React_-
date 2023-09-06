@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { TrendingCard } from "../../Components/utils/types/type";
-import { trendingCards } from "../../Components/utils/constants/DummyData";
-import { TrendingTopic, TrendingScroll } from "./components";
+import { useState } from 'react';
+import { TrendingCard } from '../../Components/utils/types/type';
+import { trendingCards } from '../../Components/utils/constants/DummyData';
+import { TrendingTopic, TrendingScroll } from './components';
 
 const Trending = () => {
   const [topic, setTopic] = useState<TrendingCard>(trendingCards[0]);

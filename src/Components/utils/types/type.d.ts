@@ -17,9 +17,4 @@ export interface TrendingCardProps {
   setTopic?: React.Dispatch<React.SetStateAction<TrendingCard>>;
 }
 
-export interface appContextType {
-  favArray: TrendingCard[];
-  showSideNav: boolean;
-  setShowSideNav: React.Dispatch<React.SetStateAction<boolean>>;
-}
 

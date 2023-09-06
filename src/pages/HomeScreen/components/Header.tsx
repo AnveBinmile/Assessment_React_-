@@ -1,4 +1,4 @@
-import { FavUnselect } from "../../../assets";
+import { FavUnselect } from '../../../assets';
 
 
 const Header = () => {
