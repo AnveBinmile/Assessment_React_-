@@ -1,25 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Content from './Components/ComponentContent/ComponentContent';
+import ComponentNavbar from './Components/ComponentNavbar/ComponentNavbar';
+import AppProvider from './common/Context/AppProvider';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProvider>
+      <div className="App bg-black flex justify-center sm:justify-start">
+        <ComponentNavbar />
+        <Content />
+      </div>
+    </AppProvider>
   );
 }
 

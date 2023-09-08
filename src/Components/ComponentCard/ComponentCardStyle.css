@@ -1,0 +1,17 @@
+.smallCard {
+    min-width: 308px;
+}
+
+.cardInfoSm {
+    bottom: 98px;
+}
+
+.bigCard {
+    min-width: 500px;
+    height: 300px;
+}
+
+.cardInfoLg {
+    bottom: 0px;
+    backdrop-filter: blur(1px);
+}
