@@ -1,7 +1,7 @@
 import { NavItemProps } from '../../ComponentNavbar/utils/types/type';
 import {
   trendingUp,
-  calender,
+  // calendar,
   film,
   users,
   messageCircle,

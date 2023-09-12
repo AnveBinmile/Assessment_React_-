@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
+/* eslint-disable max-len */
 import React, { MouseEventHandler, useState,useContext } from 'react';
 import { TrendingCard,TrendingCardProps } from './utils/types/type';
 import { FavSelect,FavUnselect } from '../../assets';
@@ -9,6 +11,7 @@ type CardProps = TrendingCardProps & TrendingCard;
 
 const ComponentCard: React.FC<CardProps> = ({
   isBig,
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   setlength = () =>{},
   topic='',
   id,
@@ -55,6 +58,7 @@ const ComponentCard: React.FC<CardProps> = ({
     }
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleClick: MouseEventHandler<HTMLDivElement> = (e) => {
     const newObj: TrendingCard = {
       setlength: setlength,

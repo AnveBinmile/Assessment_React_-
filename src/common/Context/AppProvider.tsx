@@ -4,6 +4,7 @@ import { appContextType } from './utils/types/type';
 export const AppContext = createContext<appContextType>({
   favArray: [],
   showSideNav: false,
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   setShowSideNav: () => {},
 });
 
