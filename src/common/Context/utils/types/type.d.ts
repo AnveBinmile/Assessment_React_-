@@ -3,4 +3,3 @@ export interface appContextType {
     showSideNav: boolean;
     setShowSideNav: React.Dispatch<React.SetStateAction<boolean>>;
   }
-  

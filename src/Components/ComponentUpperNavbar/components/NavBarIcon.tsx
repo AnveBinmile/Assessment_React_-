@@ -1,17 +1,19 @@
-import { useContext, MouseEventHandler } from 'react';
-import AppContext from '../../../common/Context/AppContext';
+import { useAppDispatch} from '../../../redux/hooks';
+import { setShowNav } from '../../../redux/slices/NavbarSlice';
+
+
+
 
 const NavBarIcon = () => {
-  const data = useContext(AppContext);
-  const { showSideNav, setShowSideNav }  = data;
 
-  const resetShowNavBar: MouseEventHandler<HTMLDivElement> = () => {
-    setShowSideNav((showSideNav) => !showSideNav);
-  };
+
+  const dispatch = useAppDispatch();
+
+
 
   return (
     <div
-      onClick={resetShowNavBar}
+      onClick={()=>dispatch(setShowNav())}
       className="px-[5px] absolute z-70 sm:hidden"
     >
       <i className="fa fa-bars" style={{ fontSize: '24px' }}></i>
